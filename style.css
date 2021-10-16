@@ -1,18 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:wght@100;300;500&display=swap');
+
+*{
+    font-family: 'Sarabun', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background-color: #fafafa;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px  rgb(0,0,0,0.3);
+}
+.head{    
+    border-radius: 5px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: darkblue;    
+}
+.yellow{
+    background-color: yellow;
+}
+.purple{
+    background-color: purple;
+}
+.blue{
+    background-color: blue;
+}
+.lightblue{
+    background-color :lightblue;    
+}
 .input{
+    width: 170px;
     text-align: center;
 }
-.groupResult{    
-    border-radius: 3px;
-    background-color: pink;
-    padding: 7px;
+.input2{
+    width: 150px;
+    text-align: center;
 }
 #output1{
     color: blue;
 }
 .devby{
     font-weight: bold;    
-}
-table, th, td {
-    border: 1px solid black;
-    border-collapse: collapse;
 }
