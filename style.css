@@ -1,0 +1,14 @@
+.input{
+    text-align: center;
+}
+.groupResult{    
+    border-radius: 3px;
+    background-color: pink;
+    padding: 7px;
+}
+#output1{
+    color: blue;
+}
+.devby{
+    font-weight: bold;    
+}
