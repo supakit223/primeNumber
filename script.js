@@ -13,7 +13,7 @@ function cal(){
             }            
         }        
     }   
-    output2 = `${input1} ไม่ใช่จำนวนเฉพาะ เพราะ นอกจาก 1 และ ${input1} เอง ยังมี` 
+    output2 = `${input1} ไม่ใช่จำนวนเฉพาะ เพราะ มี` 
     
     const inpObj = document.getElementById("input1")
     if (!inpObj.checkValidity()) {
@@ -30,9 +30,9 @@ function cal(){
         document.getElementById("alert").classList.add("invisible")
 
         if (count > 2) {
-            document.getElementById("output1").innerHTML = `${output2} ${output1} ที่เป็นตัวประกอบ`
+            document.getElementById("output1").innerHTML = `${output2} ${output1} ที่เป็นตัวประกอบ <hr>`
         }else{
-            document.getElementById("output1").innerHTML = `${input1} คือ จำนวนเฉพาะ`
+            document.getElementById("output1").innerHTML = `${input1} คือ จำนวนเฉพาะ เพราะ มีเพียง 1 และ ${input1} ที่เป็นตัวประกอบ <hr>`
         }        
     }    
 }
