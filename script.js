@@ -39,7 +39,8 @@ function cal1(){
 }
 function cal2() {
     const input2 = document.getElementById("input2").value   
-    let output2 = ""            
+    let output2 = "" 
+    let amount = 0          
     for(let i=2 ; i<=input2 ; i++){         
         let count = 0      
         for(let j=1 ; j<=i ; j++){
@@ -48,6 +49,7 @@ function cal2() {
             }            
         }        
         if(count <= 2){
+            amount++
             if (i < input2) {
                 output2 = output2 + ` ${i} , `
             } else {
@@ -73,7 +75,7 @@ function cal2() {
         document.getElementById("alert2").classList.remove("visible")
         document.getElementById("alert2").classList.add("invisible")
         
-        document.getElementById("output1").innerHTML = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;จำนวนเฉพาะจาก 2 ถึง ${input2} มีดังนี้ ${output2}`           
+        document.getElementById("output1").innerHTML = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;จำนวนเฉพาะจาก 2 ถึง ${input2} มี ${amount} ตัว ดังนี้ ${output2}`           
     }                
 }
 function resetPage() {
