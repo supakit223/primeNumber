@@ -1,8 +1,7 @@
 function cal(){
     const input1 = document.getElementById("input1").value
     let count = 0
-    let output1 = ""
-    let output2         
+    let output1 = ""            
     for(i=1 ; i<=input1 ; i++){       
         if (input1%i == 0) {
             count++
@@ -12,9 +11,7 @@ function cal(){
                 output1 = output1 + ` ${i}`
             }            
         }        
-    }   
-    output2 = `${input1} ไม่ใช่จำนวนเฉพาะ เพราะ มี` 
-    
+    }         
     const inpObj = document.getElementById("input1")
     if (!inpObj.checkValidity()) {
         document.getElementById("alert").classList.remove("invisible")
@@ -30,9 +27,9 @@ function cal(){
         document.getElementById("alert").classList.add("invisible")
 
         if (count > 2) {
-            document.getElementById("output1").innerHTML = `${output2} ${output1} ที่เป็นตัวประกอบ <hr>`
+            document.getElementById("output1").innerHTML = `${input1} ไม่ใช่จำนวนเฉพาะ เพราะ มี ${output1} เป็นตัวประกอบ <hr>`
         }else{
-            document.getElementById("output1").innerHTML = `${input1} คือ จำนวนเฉพาะ เพราะ มีเพียง 1 และ ${input1} ที่เป็นตัวประกอบ <hr>`
+            document.getElementById("output1").innerHTML = `${input1} คือ จำนวนเฉพาะ เพราะ มีเพียง 1 และ ${input1} เป็นตัวประกอบ <hr>`
         }        
     }    
 }
