@@ -22,17 +22,19 @@
                 <p2 class="fst-italic">คือ จำนวนนับที่มากกว่า 1 และมีตัวประกอบเพียง 2 ตัว คือ 1 และ ตัวมันเอง</p2>
             </label>                  
         </div>                
-        <div class="mt-3 d-flex align-content-center justify-content-center">
-            <input id="input1" class="p-1 mx-2 input" type="number" min="2" max="1000000" required placeholder="2 - 1000000">
-            <label class="p-1">เป็นจำนวนเฉพาะหรือไม่?</label>                                    
-        </div>
-        <div>
-            <small id="alert" class="invisible mb-2 text-danger d-flex align-content-center justify-content-center"></small>
-        </div>        
-        <div class="mt-1 mb-2 d-flex align-content-center justify-content-center">
-            <button class="btn btn-outline-success" onclick="cal()" type="submit button">ทดสอบ</button>
-            <button class="mx-1 btn btn-outline-danger" onclick="resetPage()">เคลียร์ข้อมูล</button>
-        </div>       
+        <div class="border border-1">
+            <div class="mt-3 d-flex align-content-center justify-content-center">
+                <input id="input1" class="p-1 mx-2 input" type="number" min="2" max="1000000" required placeholder="2 - 1000000">
+                <label class="p-1">เป็นจำนวนเฉพาะหรือไม่?</label>
+            </div>
+            <div>
+                <small id="alert" class="invisible mb-2 text-danger d-flex align-content-center justify-content-center"></small>
+            </div>
+            <div class="mt-1 mb-2 d-flex align-content-center justify-content-center">
+                <button class="btn btn-outline-success" onclick="cal()" type="submit button">ทดสอบ</button>
+                <button class="mx-1 btn btn-outline-danger" onclick="resetPage()">เคลียร์ข้อมูล</button>
+            </div>
+        </div>  
         <hr>    
         <!-- output -->
         <div class="mb-2 d-flex align-content-center justify-content-center">
