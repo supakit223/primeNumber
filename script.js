@@ -27,9 +27,11 @@ function cal(){
         document.getElementById("alert").classList.add("invisible")
 
         if (count > 2) {
-            document.getElementById("output1").innerHTML = `${input1} ไม่ใช่จำนวนเฉพาะ เพราะ มี ${output1} เป็นตัวประกอบ <hr>`
+            document.getElementById("output1").innerHTML = `&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;${input1} ไม่ใช่จำนวนเฉพาะ เพราะ มี ${output1} เป็นตัวประกอบ`
+            document.getElementById("output2").innerHTML = `<hr>`
         }else{
-            document.getElementById("output1").innerHTML = `${input1} คือ จำนวนเฉพาะ เพราะ มีเพียง 1 และ ${input1} เป็นตัวประกอบ <hr>`
+            document.getElementById("output1").innerHTML = `${input1} คือ จำนวนเฉพาะ เพราะ มีเพียง 1 และ ${input1} เป็นตัวประกอบ`
+            document.getElementById("output2").innerHTML = `<hr>`
         }        
     }    
 }
