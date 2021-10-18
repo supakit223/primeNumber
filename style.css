@@ -22,11 +22,7 @@ body{
     border-style: solid;
     border-color: orangered;    
 }
-.input{
-    width: 170px;
-    text-align: center;
-}
-.input2{
+.input,.input2{
     width: 150px;
     text-align: center;
 }
